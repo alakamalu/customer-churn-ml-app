@@ -105,6 +105,9 @@ churn_web_app/
 ├── dataset/
 │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
 │
+├── notebook/
+│   └── Customer_Churn_Prediction.ipynb
+│
 ├── templates/
 │   └── index.html
 │
