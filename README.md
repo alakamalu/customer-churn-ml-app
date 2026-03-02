@@ -10,8 +10,6 @@ The system takes customer details as input, processes them using trained ML prep
 
 The model is deployed as an interactive web application.
 
----
-
 ## 🚀 Project Highlights
 
 ✔ Real-world business problem (customer retention)
@@ -24,7 +22,6 @@ The model is deployed as an interactive web application.
 ✔ Probability-based risk classification
 ✔ Cloud deployment ready
 
----
 
 ## 🧠 Machine Learning Workflow
 
@@ -39,7 +36,6 @@ The model is deployed as an interactive web application.
 9. Saving model and preprocessing objects
 10. Web deployment using Flask
 
----
 
 ## 🤖 Model Used
 
@@ -50,7 +46,6 @@ Logistic Regression was selected because:
 * Interpretable predictions
 * Stable performance
 
----
 
 ## 📥 Input Features
 
@@ -66,7 +61,6 @@ The web application accepts the following customer attributes:
 
 Categorical features are selected using dropdown menus and automatically encoded.
 
----
 
 ## 📈 Output Provided
 
@@ -84,8 +78,6 @@ Churn Probability: 82%
 Risk Level: HIGH
 ```
 
----
-
 ## 🖥️ Web Application
 
 The trained model is integrated into a Flask web app that:
@@ -95,7 +87,6 @@ The trained model is integrated into a Flask web app that:
 * Generates predictions instantly
 * Displays results in a professional UI
 
----
 
 ## 📂 Project Structure
 
@@ -117,8 +108,6 @@ churn_web_app/
     └── style.css
 ```
 
----
-
 ## ⚙️ Technologies Used
 
 * Python
@@ -129,7 +118,6 @@ churn_web_app/
 * HTML / CSS
 * Gunicorn
 
----
 
 ## 🌐 Live Demo
 
@@ -137,7 +125,6 @@ churn_web_app/
 https://your-live-app-url
 ```
 
----
 
 ## 🎯 Business Value
 
@@ -148,7 +135,6 @@ Customer churn prediction helps companies:
 * Reduce revenue loss
 * Improve customer satisfaction
 
----
 
 ## 👨‍💻 Author
 
