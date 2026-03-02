@@ -129,7 +129,7 @@ churn_web_app/
 ## 🌐 Live Demo
 
 ```
-https://your-live-app-url
+https://customer-churn-ml-app.onrender.com
 ```
 
 
