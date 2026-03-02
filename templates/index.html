@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Customer Churn Prediction</h1>
+    <p class="subtitle">Predict if a customer is likely to leave</p>
+
+    <form action="/predict" method="post">
+
+    {% for feature in features %}
+
+        <!-- Number inputs -->
+        {% if feature in ['TotalCharges','MonthlyCharges','tenure'] %}
+            <div class="form-group full">
+                <label>{{ feature }}</label>
+                <input type="number" step="any" name="{{ feature }}" required>
+            </div>
+        {% endif %}
+
+    {% endfor %}
+
+
+    <!-- Dropdown section in grid -->
+    <div class="grid">
+
+        <div class="form-group">
+            <label>Contract</label>
+            <select name="Contract">
+                <option>Month-to-month</option>
+                <option>One year</option>
+                <option>Two year</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>PaymentMethod</label>
+            <select name="PaymentMethod">
+                <option>Electronic check</option>
+                <option>Mailed check</option>
+                <option>Bank transfer (automatic)</option>
+                <option>Credit card (automatic)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>OnlineSecurity</label>
+            <select name="OnlineSecurity">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>TechSupport</label>
+            <select name="TechSupport">
+                <option>No</option>
+                <option>Yes</option>
+                <option>No internet service</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button type="submit">Predict Churn</button>
+
+    </form>
+
+    {% if prediction is not none %}
+    <div class="result">
+        <pre>{{ prediction }}</pre>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
