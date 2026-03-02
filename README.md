@@ -12,15 +12,15 @@ The model is deployed as an interactive web application.
 
 ## 🚀 Project Highlights
 
-✔ Real-world business problem (customer retention)
-✔ Full ML pipeline from data to deployment
-✔ Feature selection using Random Forest importance
-✔ Logistic Regression classification model
-✔ Data preprocessing with encoding and scaling
-✔ Interactive web interface using Flask
-✔ Dropdown handling for categorical features
-✔ Probability-based risk classification
-✔ Cloud deployment ready
+- Real-world business problem (customer retention)
+- Full ML pipeline from data to deployment
+- Feature selection using Random Forest importance
+- Logistic Regression classification model
+- Data preprocessing with encoding and scaling
+- Interactive web interface using Flask
+- Dropdown handling for categorical features
+- Probability-based risk classification
+- Cloud deployment ready
 
 
 ## 🧠 Machine Learning Workflow
